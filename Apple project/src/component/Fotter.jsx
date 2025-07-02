@@ -2,7 +2,7 @@ import React from "react";
 
 function Fotter() {
   return (
-    <div className="fotter fixed-bottom">
+    <div className="">
       <div className="container">
         1. Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro
         promotional pricing is after trade‑in of iPhone 8 Plus and iPhone X in
