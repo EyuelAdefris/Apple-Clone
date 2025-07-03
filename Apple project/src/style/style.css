@@ -48,13 +48,162 @@
   text-decoration-thickness: 2px;
   text-decoration-color: #00bfff !important;
 }
+/* Footer styles */
+
+/* Main Footer Container */
 .fotter-wrapper {
   background-color: #f5f5f7;
-  color: #86868b;
+  color: #555;
+  font-size: 14px;
+  padding: 10px 100px;
   width: 100%;
-  position: fixed;
-  left: 0;
+}
+
+.footer-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section {
+}
+
+.footer-section-title {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #1d1d1f;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.toggle-icon {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* Links */
+.footer-links {
+  display: none;
+}
+
+.footer-links.active {
+  display: block;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #515154;
+  text-decoration: none;
+}
+
+/* .footer-links a:hover {
+  text-decoration: underline;
+  color: #4e2131;
+} */
+
+/* Footer bottom */
+.footer-bottom {
+  padding-top: 30px;
+  text-align: left;
+  font-size: 13px;
+  color: #6e6e73;
+}
+
+/* Responsive behavior */
+@media (min-width: 768px) {
+  .footer-links-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+  }
+
+  .footer-section-title {
+    cursor: default;
+    pointer-events: none;
+    padding-bottom: 10px;
+  }
+
+  .toggle-icon {
+    display: none;
+  }
+
+  .footer-links {
+    display: block !important;
+  }
+}
+.footer-links a {
+  color: #515154;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+  display: inline-block; /* Better for hover effects */
+  padding: 2px 0; /* Add some padding for better hover area */
+}
+
+.footer-links a:hover {
+  color: #06c; /* Apple's standard link blue color */
+  text-decoration: none; /* Remove underline if you prefer */
+}
+
+/* For a more Apple-like subtle animation */
+.footer-links a {
+  position: relative;
+}
+
+.footer-links a:hover::after {
+  content: "";
+  position: absolute;
   bottom: 0;
-  z-index: 100;
-  padding: 16px 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #06c;
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #06c;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.footer-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media (max-width: 767.98px) {
+  .footer-section {
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 10px;
+  }
 }
