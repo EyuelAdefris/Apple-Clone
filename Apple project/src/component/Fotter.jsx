@@ -194,28 +194,24 @@ function Footer() {
           <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
         </p>
 
-        {/* Horizontal rule - hidden in mobile */}
-        <hr className="d-none d-md-block mb-3" />
+        <hr className="d-none d-md-block mb-3 custom-hr" />
 
-        <div className="d-flex flex-column flex-md-row align-items-md-center">
-          {/* Copyright - left aligned on desktop, first on mobile */}
-          <p className="order-1 order-md-1 mb-2 mb-md-0 me-md-auto">
+        <div className="footer-bottom-row">
+          <p className="footer-copyright">
             Copyright © 2023 Apple Inc. All rights reserved.
           </p>
 
-          {/* Flag - right on desktop, last on mobile */}
-          <p className="order-3 order-md-3 mb-2 mb-md-0 ms-md-auto">
+          <div className="footer-policy-links">
+            <span>Privacy Policy</span>
+            <span>Terms of Use</span>
+            <span>Sales and Refunds</span>
+            <span>Legal</span>
+            <span>Site Map</span>
+          </div>
+
+          <p className="footer-flag">
             <img src={flag} alt="flag" /> United States
           </p>
-
-          {/* Policy links - centered on desktop, middle on mobile */}
-          <div className="order-2 order-md-2 d-flex flex-wrap justify-content-start justify-content-md-center mb-2 mb-md-0 w-100 w-md-auto">
-            <p className="me-3 mb-1 mb-md-0">Privacy Policy |</p>
-            <p className="me-3 mb-1 mb-md-0">Terms of Use |</p>
-            <p className="me-3 mb-1 mb-md-0">Sales and Refunds |</p>
-            <p className="me-3 mb-1 mb-md-0">Legal |</p>
-            <p className="mb-1 mb-md-0">Site Map |</p>
-          </div>
         </div>
       </div>
     </div>
