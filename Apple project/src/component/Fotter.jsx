@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import flag from "../assets/icon/16.png";
+import "../style/footer.css";
 function Footer() {
   const [activeSection, setActiveSection] = useState(null);
 
@@ -190,8 +191,9 @@ function Footer() {
       {/* Bottom copyright */}
       <div className="footer-bottom">
         <p className="mb-2">
-          More ways to shop: <a href="#">Find an Apple Store</a> or{" "}
-          <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
+          More ways to shop: <a href="#">Find an Apple Store</a> or
+          <a href="#">other retailer</a> near you. Or call
+          <a href="#">1-800-MY-APPLE</a>.
         </p>
 
         <hr className="d-none d-md-block mb-3 custom-hr" />
@@ -202,11 +204,11 @@ function Footer() {
           </p>
 
           <div className="footer-policy-links">
-            <span>Privacy Policy</span>
-            <span>Terms of Use</span>
-            <span>Sales and Refunds</span>
-            <span>Legal</span>
-            <span>Site Map</span>
+            <span>Privacy Policy |</span>
+            <span>Terms of Use |</span>
+            <span>Sales and Refunds |</span>
+            <span>Legal |</span>
+            <span>Site Map |</span>
           </div>
 
           <p className="footer-flag">

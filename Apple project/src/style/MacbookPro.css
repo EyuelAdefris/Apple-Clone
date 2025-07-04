@@ -1,0 +1,92 @@
+/* Base styles for all devices */
+.macbook-promo {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 5px;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.model-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #86868b;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.product-name {
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin: 5px 0;
+  color: #1d1d1f;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #1d1d1f;
+  margin: 15px 0;
+}
+
+.cta-buttons {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.learn-more-btn,
+.buy-now {
+  color: #06c;
+  background-color: transparent;
+  border: 1px solid #06c;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover,
+.buy-now:hover {
+  background-color: #0071e3;
+  color: white;
+  border-color: #0071e3;
+}
+
+.product-image-container {
+  margin: 30px 0 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Desktop-specific styles */
+/* @media (min-width: 992px) {
+  .content-wrapper {
+    padding: 0 40px;
+  }
+
+  .product-name {
+    font-size: 4rem;
+  }
+
+  .tagline {
+    font-size: 1.8rem;
+  }
+
+  .product-image {
+    max-width: 1200px;
+  }
+} */
