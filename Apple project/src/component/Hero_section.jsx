@@ -8,7 +8,7 @@ const MacBookPromo = () => {
     <div className="macbook-promo">
       <div className="content-wrapper">
         <div className="text-center">
-          <span className="model-text">16-inch model</span>
+          <span className="model-text-mac">16-inch model</span>
           <h1 className="product-name">MacBook Pro</h1>
           <p className="tagline">The best for the brightest</p>
           <div className="cta-buttons">

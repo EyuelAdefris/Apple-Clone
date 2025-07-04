@@ -4,7 +4,7 @@
     Arial, sans-serif;
   width: 100%;
   background-color: #fff;
-  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .content-wrapper {
@@ -13,7 +13,7 @@
   padding: 0 20px;
 }
 
-.model-text {
+.model-text-mac {
   font-size: 1rem;
   font-weight: 400;
   color: #86868b;
@@ -71,22 +71,3 @@
   max-width: 100%;
   height: auto;
 }
-
-/* Desktop-specific styles */
-/* @media (min-width: 992px) {
-  .content-wrapper {
-    padding: 0 40px;
-  }
-
-  .product-name {
-    font-size: 4rem;
-  }
-
-  .tagline {
-    font-size: 1.8rem;
-  }
-
-  .product-image {
-    max-width: 1200px;
-  }
-} */

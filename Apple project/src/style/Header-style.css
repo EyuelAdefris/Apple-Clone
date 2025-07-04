@@ -1,3 +1,11 @@
+.fixed-position {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .bg-color {
   background-color: #000c;
 }
@@ -72,9 +80,6 @@
   flex-direction: column;
 }
 
-.footer-section {
-}
-
 .footer-section-title {
   background: none;
   border: none;
@@ -119,6 +124,7 @@
 } */
 
 /* Footer bottom */
+
 .footer-bottom {
   padding-top: 30px;
   text-align: left;

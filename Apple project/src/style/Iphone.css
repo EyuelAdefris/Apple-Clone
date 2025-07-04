@@ -1,0 +1,69 @@
+.iphone-promo-wrapper {
+  background-image: url("../assets/home/iphone11-pro-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  margin-bottom: 10px;
+}
+.iphone-promo-content {
+  padding: 10px;
+  border-radius: 0px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.model-text {
+  font-weight: 600;
+  font-size: 56px;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.Discription-wrapper {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.price-text {
+  font-size: 1 rem;
+  color: #86868b;
+  font-weight: 400;
+}
+
+.learn-more-link {
+  color: #06c;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0;
+}
+
+.learn-more-link:hover {
+  text-decoration: underline;
+  color: #06c;
+}
+/* 
+@media (max-width: 768px) {
+  .iphone-promo-wrapper {
+    min-height: 500px;
+    padding: 20px;
+  }
+
+  .iphone-promo-content {
+    padding: 30px;
+  }
+
+  .model-text {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+  }
+
+  .price-text {
+    font-size: 1rem;
+  }
+} */
