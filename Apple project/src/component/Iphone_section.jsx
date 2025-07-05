@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
-import "../style/Iphone.css";
+import "../style/Iphone_pro.css";
 
 const IphonePromo = () => {
   return (

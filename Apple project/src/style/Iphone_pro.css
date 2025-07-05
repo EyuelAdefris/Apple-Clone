@@ -44,26 +44,3 @@
   text-decoration: underline;
   color: #06c;
 }
-/* 
-@media (max-width: 768px) {
-  .iphone-promo-wrapper {
-    min-height: 500px;
-    padding: 20px;
-  }
-
-  .iphone-promo-content {
-    padding: 30px;
-  }
-
-  .model-text {
-    font-size: 1.5rem;
-  }
-
-  .tagline {
-    font-size: 1.5rem;
-  }
-
-  .price-text {
-    font-size: 1rem;
-  }
-} */
