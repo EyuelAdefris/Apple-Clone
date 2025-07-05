@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
-import "../style/Iphone_pro.css";
+import "../style/Iphone11_pro.css";
 
-const IphonePromo = () => {
+const IphonePro = () => {
   return (
     <div className="iphone-promo-wrapper">
       <Container className="iphone-promo-content text-center">
@@ -28,4 +28,4 @@ const IphonePromo = () => {
   );
 };
 
-export default IphonePromo;
+export default IphonePro;

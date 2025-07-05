@@ -1,0 +1,46 @@
+.iphone-11-wrapper {
+  background-image: url("../assets/home/iphone11-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  margin-bottom: 10px;
+}
+.iphone-11-content {
+  padding: 10px;
+  border-radius: 0px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.model-text-11 {
+  font-weight: 600;
+  font-size: 56px;
+  color: #000;
+  letter-spacing: -0.5px;
+}
+
+.Discription-wrapper11 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.1;
+}
+
+.price-text {
+  font-size: 1 rem;
+  color: #86868b;
+  font-weight: 400;
+}
+
+.learn-more-link {
+  color: #06c;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0;
+}
+
+.learn-more-link:hover {
+  text-decoration: underline;
+  color: #06c;
+}
