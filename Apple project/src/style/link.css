@@ -1,0 +1,17 @@
+.learn-more-btn,
+.buy-now {
+  color: #06c;
+  background-color: transparent;
+  border: 1px solid #06c;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover,
+.buy-now:hover {
+  background-color: #0071e3;
+  color: white;
+  border-color: #0071e3;
+}

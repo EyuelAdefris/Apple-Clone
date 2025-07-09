@@ -32,15 +32,3 @@
   color: #86868b;
   font-weight: 400;
 }
-
-.learn-more-link {
-  color: #06c;
-  font-size: 1.2rem;
-  text-decoration: none;
-  padding: 0;
-}
-
-.learn-more-link:hover {
-  text-decoration: underline;
-  color: #06c;
-}

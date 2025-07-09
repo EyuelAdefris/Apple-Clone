@@ -1,6 +1,7 @@
 import React from "react";
-import { Button, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import MacBookImage from "../assets/home/macbookair-new.jpg";
+import Link from "./link";
 import "../style/MacBookPro.css";
 
 const MacBookPromo = () => {
@@ -11,14 +12,7 @@ const MacBookPromo = () => {
           <span className="model-text-mac">16-inch model</span>
           <h1 className="product-name">MacBook Pro</h1>
           <p className="tagline">The best for the brightest</p>
-          <div className="cta-buttons">
-            <Button variant="outline-primary" className="learn-more-btn">
-              Learn more
-            </Button>
-            <Button variant="outline-primary" className="buy-now">
-              Buy
-            </Button>
-          </div>
+          <Link />
         </div>
         <div className="product-image-container">
           <Image

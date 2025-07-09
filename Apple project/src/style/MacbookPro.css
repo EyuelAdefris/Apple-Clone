@@ -31,7 +31,7 @@
 
 .product-name {
   font-size: 3.5rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.5px;
   margin: 10px 0; /* Increased spacing */
   color: #1d1d1f;
@@ -43,31 +43,6 @@
   color: #1d1d1f;
   margin: 20px 0; /* Increased spacing */
   line-height: 1.2;
-}
-
-.cta-buttons {
-  margin: 30px 0; /* Increased spacing */
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* More space between buttons */
-}
-
-.learn-more-btn,
-.buy-now {
-  color: #06c;
-  background-color: transparent;
-  border: 1px solid #06c;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  padding: 10px 25px; /* Larger click area */
-  transition: all 0.3s ease;
-}
-
-.learn-more-btn:hover,
-.buy-now:hover {
-  background-color: #0071e3;
-  color: white;
-  border-color: #0071e3;
 }
 
 .product-image-container {

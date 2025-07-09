@@ -1,0 +1,70 @@
+/* TV+ Card specific styles */
+.promo-content {
+  background-image: url("../assets/home/apple-tv-background.jpg");
+  text-transform: uppercase;
+  justify-content: space-between; /* Distribute space between elements */
+  padding: 40px 40px 60px; /* More padding at bottom for trailer link */
+}
+
+.logo-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Apple TV+ logo at top */
+.tv-logo {
+  height: 40px;
+  width: auto;
+  margin-bottom: 30px; /* Space between TV logo and content */
+}
+
+/* Servant logo centered */
+.servant-logo {
+  height: 30px;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Content container for centered items */
+.promo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative; /* For absolute positioning of servant logo */
+  flex-grow: 1; /* Takes available space */
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 10px 0;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+/* Trailer link at bottom */
+.trailer-link {
+  margin-top: auto; /* Pushes to bottom */
+  padding-bottom: 20px; /* Extra space at bottom */
+  width: 100%;
+}
+
+.trailer-link a {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+  display: inline-block;
+}

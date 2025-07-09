@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
+import Link from "./link";
 import "../style/Iphone11.css";
 
 const Iphone11 = () => {
@@ -15,14 +16,7 @@ const Iphone11 = () => {
         <div className="price-text">
           <p>from $16.62/mo. $399 with trade-in.</p>
         </div>
-        <div className="cta-buttons">
-          <Button variant="outline-primary" className="learn-more-btn">
-            Learn more
-          </Button>
-          <Button variant="outline-primary" className="buy-now">
-            Buy
-          </Button>
-        </div>
+        <Link />
       </Container>
     </div>
   );
