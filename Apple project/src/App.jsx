@@ -16,7 +16,7 @@ function App() {
       <IphonePro />
       <Iphone11 />
       <Card1 />
-      {/* <Card2 /> */}
+      <Card2 />
       <Fotter />
     </>
   );

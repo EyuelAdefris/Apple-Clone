@@ -1,9 +1,35 @@
+/* Main container styles */
+.promo-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  max-width: 100%;
+}
+
 /* TV+ Card specific styles */
-.promo-content {
+.promo-container.tv-promo {
   background-image: url("../assets/home/apple-tv-background.jpg");
-  text-transform: uppercase;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between; /* Distribute space between elements */
-  padding: 40px 40px 60px; /* More padding at bottom for trailer link */
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  flex: 1;
+  min-width: 0;
+  padding: 40px 40px 100px; /* More padding at bottom for trailer link */
+  box-sizing: border-box;
+  position: relative;
+  text-transform: uppercase;
 }
 
 .logo-stack {
@@ -22,10 +48,10 @@
 
 /* Servant logo centered */
 .servant-logo {
-  height: 30px;
+  height: 80px;
   width: auto;
   position: absolute;
-  top: 50%;
+  top: 41%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -38,33 +64,18 @@
   width: 100%;
   position: relative; /* For absolute positioning of servant logo */
   flex-grow: 1; /* Takes available space */
-}
-
-.title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin: 10px 0;
-  letter-spacing: -1px;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  margin: 5px 0;
-  font-weight: 500;
+  height: 100%;
 }
 
 /* Trailer link at bottom */
 .trailer-link {
-  margin-top: auto; /* Pushes to bottom */
-  padding-bottom: 20px; /* Extra space at bottom */
+  margin-top: 24rem; /* Pushes to bottom */
+  /* Extra space at bottom */
   width: 100%;
 }
 
 .trailer-link a {
-  color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: none;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 2px;
   display: inline-block;
 }

@@ -8,7 +8,7 @@ const WatchAndCards = () => {
   return (
     <div className="promo-row">
       {/* Watch Series 5 Card */}
-      <div className="watch-promo-container">
+      <div className="watch-promo-container watch-card">
         <div className="promo-content">
           <div className="img-wrapper">
             <img

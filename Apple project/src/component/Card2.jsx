@@ -1,11 +1,8 @@
 import React from "react";
 import TvLogo from "../assets/icon/apple-tv-logo.png";
 import ServantLogo from "../assets/icon/servant-logo.png";
-// import AirpodsImage from "../assets/icon/airpods-pro.png";
-// import TvBackground from "../assets/home/apple-tv-background.jpg";
-// import AirpodsBackground from "../assets/home/airpods-background.jpg";
 import Link from "./link";
-import "../style/card1.css";
+import "../style/card2.css";
 
 const PromoCard = () => {
   return (

@@ -2,14 +2,14 @@
 .promo-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 10px;
-  margin: 10px;
+  margin: 10px auto;
   max-width: 100%;
 }
 
-/* Individual card styling - Desktop */
+/* Individual card styling */
 .watch-promo-container {
   background-size: cover;
   background-position: center 30%;
@@ -24,14 +24,14 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
   flex: 1;
-  min-width: 0;
+  min-width: calc(50% - 20px);
   padding: 20px;
   box-sizing: border-box;
   position: relative;
 }
 
 /* First card background */
-.watch-promo-container:first-child {
+.watch-promo-container.watch-card {
   background-image: url("../assets/home/watch-series-5.jpg");
 }
 
@@ -46,40 +46,22 @@
   max-width: 450px;
   width: 100%;
 }
+
 .img-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
 
-/* Mobile Responsiveness (max-width: 768px) */
-@media (max-width: 868px) {
+/* Mobile styles */
+@media (max-width: 768px) {
   .promo-row {
     flex-direction: column;
+    gap: 20px;
   }
 
   .watch-promo-container {
-    width: 100%;
-  }
-  .promo-content {
-    margin-bottom: 500px;
-  }
-
-  .links-wrapper {
-    margin: 15px 0;
-    gap: 10px; /* Slightly larger gap for touch targets */
-  }
-}
-
-/* Small Mobile (max-width: 480px) */
-@media (max-width: 480px) {
-  .watch-promo-container {
-    height: 300px; /* Slightly shorter for very small screens */
-    padding: 15px; /* Slightly reduced padding */
-  }
-
-  .promo-text {
-    font-size: 1.1rem;
-    max-width: 90%; /* More text width on smallest screens */
+    min-width: 100%;
+    height: 700px; /* Adjust height for mobile if needed */
   }
 }
