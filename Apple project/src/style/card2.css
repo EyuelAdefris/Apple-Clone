@@ -1,12 +1,11 @@
-/* Main container styles */
-.promo-row {
+Main container styles .promo-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 10px;
-  max-width: 100%;
+  align-items: stretch;
+  gap: 0;
+  margin: 0;
+  width: 100%;
 }
 
 /* TV+ Card specific styles */
@@ -18,15 +17,16 @@
   height: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribute space between elements */
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
-  flex: 1;
+  flex: 1 1 0%;
   min-width: 0;
-  padding: 40px 40px 100px; /* More padding at bottom for trailer link */
+  max-width: 50%;
+  padding: 40px 40px 100px;
   box-sizing: border-box;
   position: relative;
   text-transform: uppercase;
@@ -43,7 +43,7 @@
 .tv-logo {
   height: 40px;
   width: auto;
-  margin-bottom: 30px; /* Space between TV logo and content */
+  margin-bottom: 30px;
 }
 
 /* Servant logo centered */
@@ -56,26 +56,53 @@
   transform: translate(-50%, -50%);
 }
 
-/* Content container for centered items */
-.promo-content {
-  display: flex;
-  flex-direction: column;
+/* //.play-icon */
+.play-link {
+  display: inline-flex;
   align-items: center;
-  width: 100%;
-  position: relative; /* For absolute positioning of servant logo */
-  flex-grow: 1; /* Takes available space */
-  height: 100%;
-}
-
-/* Trailer link at bottom */
-.trailer-link {
-  margin-top: 24rem; /* Pushes to bottom */
-  /* Extra space at bottom */
-  width: 100%;
-}
-
-.trailer-link a {
-  font-size: 1rem;
+  gap: 8px;
+  color: #06c;
   text-decoration: none;
-  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 20px;
+  text-transform: none;
+  transition: color 0.2s ease;
+}
+
+.play-link:hover {
+  color: #0077ed;
+  text-decoration: underline;
+}
+
+.logo-stack {
+  gap: 15px;
+  margin-bottom: 22rem;
+  text-transform: none;
+}
+
+@media (max-width: 900px) {
+  .promo-container.airpods-promo {
+    height: 400px;
+    padding: 24px 10px 60px;
+    display: flex;
+    flex-direction: row;
+  }
+  .product-title {
+    font-size: 2rem;
+  }
+  .product-tagline {
+    font-size: 1.1rem;
+  }
+  .airpods-img {
+    width: 220px;
+  }
+  .promo-row {
+    flex-direction: row;
+  }
+  .promo-container.tv-promo,
+  .promo-container.airpods-promo {
+    max-width: 100%;
+    width: 100%;
+  }
 }

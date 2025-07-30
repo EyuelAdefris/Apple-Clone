@@ -57,11 +57,10 @@
 @media (max-width: 768px) {
   .promo-row {
     flex-direction: column;
-    gap: 20px;
   }
 
   .watch-promo-container {
     min-width: 100%;
-    height: 700px; /* Adjust height for mobile if needed */
+    height: 700px;
   }
 }

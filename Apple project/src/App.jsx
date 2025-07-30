@@ -6,7 +6,6 @@ import Hero_section from "./component/Hero_section";
 import IphonePro from "./component/Iphone11Pro_section";
 import Iphone11 from "./component/Iphone11";
 import Card1 from "./component/Card1";
-import Card2 from "./component/Card2";
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
       <IphonePro />
       <Iphone11 />
       <Card1 />
-      <Card2 />
+
       <Fotter />
     </>
   );

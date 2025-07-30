@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 import TvLogo from "../assets/icon/apple-tv-logo.png";
 import ServantLogo from "../assets/icon/servant-logo.png";
 import Link from "./link";
@@ -7,7 +9,6 @@ import "../style/card2.css";
 const PromoCard = () => {
   return (
     <div className="promo-row">
-      {/* Apple TV+ Card */}
       <div className="promo-container tv-promo">
         <div className="promo-content">
           <div className="logo-stack">
@@ -15,22 +16,12 @@ const PromoCard = () => {
             <img src={ServantLogo} alt="Servant" className="servant-logo" />
           </div>
 
-          <div className="trailer-link">
-            <a href="#">It's the trailer</a>
-          </div>
+          <a href="#" className="play-link">
+            <span>Watch the trailer</span>
+            <FontAwesomeIcon icon={faCirclePlay} className="play-icon" />
+          </a>
         </div>
       </div>
-
-      {/* AirPods Pro Card */}
-      {/* <div className="promo-container airpods-promo">
-        <div className="promo-content">
-          <h2 className="product-title">AirPods Pro</h2>
-          <p className="product-tagline">Magic like you've never heard.</p>
-          <div className="links-wrapper">
-            <Link />
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
